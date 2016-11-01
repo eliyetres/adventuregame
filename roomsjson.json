@@ -1,0 +1,274 @@
+{
+  "Inn": {
+    "key": "Inn",
+    "description": "You're in a small room at the Inn.",
+    "ConnectingRooms": {
+      "south": "Village"
+    },
+    "items": {
+      "wardrobe": {
+        "openable": {
+          "status": "closed",
+          "contains": "some linen and an extra pillow, but no clothes"
+        },
+        "description": "It's a sturdy wardrobe."
+      },
+      "pillows": {
+        "description": "There are some pillows on the bed.",
+        "contains": "a shirt"
+      },
+      "trunk": {
+        "kickable": "",
+        "openable": {
+          "status": "closed"
+        },
+        "description": "It's a large trunk.",
+        "moveable": {
+          "status": "by the bed's end"
+        }
+      },
+      "bed": {
+        "description": "It's a small wooden bed.",
+        "contains": "a pair of shoes"
+      },
+      "rug": {
+        "description": "A small green uneven rug.",
+        "contains": "your pants",
+        "moveable": {
+          "status": ""
+        }
+      },
+      "vase": {
+        "description": "It's a blue vase with white dandylions painted on.",
+        "kickable": {
+          "status": "probalby quite expensive",
+          "contains": "shards"
+        }
+      }
+    },
+    "clue": "The room in in quite a mess.\nYou should take a look around, try opening or kicking a few things.",
+    "RoomCriteria": [
+      "companion"
+    ],
+    "RoomInventory": {
+      "items": {
+        "companion": {
+          "description": "It's your companion."
+        },
+        "your pants": {
+          "description": "It's your pants."
+        },
+        "a shirt": {
+          "description": "It's a shirt.\nIt's very comfortable."
+        },
+        "a pair of shoes": {
+          "description": "A pair of shoes."
+        }
+      }
+    },
+    "Help": "You should put some clothes on first.",
+    "Look": "There is a bed center of the room.\nOn the bed there is a blue duvet and a couple of pillows.\nThere is a trunk by the bed's end.\nA green rug is placed on the floor and there is a blue vase\non the bedside table by the window.\nThe room is quite untidy.\nBehind you there is a way that leads outside."
+  },
+  "Village": {
+    "key": "Village",
+    "description": "You walk into a small village.\nThe village contains a few small wooden houses and a farm.",
+    "ConnectingRooms": {
+      "north": "Inn",
+      "south": "Forest"
+    },
+    "items": {
+      "conversation with villagers": {
+        "description": "Some villagers are having a conversation.",
+        "contains": "a bag of cookies"
+      },
+      "farm": {
+        "description": "Potatoes and carrots grow here.",
+        "contains": "a bundle of carrots",
+        "kickable": {
+          "status": "some nice rows filled with crops",
+          "contains": "some squashed potatoes"
+        }
+      }
+    },
+    "clue": "If we want to go into the forest we will need some food.\nMaybe we could ask the villagers if they can give us some.\n\nThe forest is to the south from here.",
+    "RoomCriteria": [
+      "your pants",
+      "a shirt",
+      "a pair of shoes"
+    ],
+    "RoomInventory": {
+      "items": {
+        "bag of cookies": {
+          "description": "A bag of cookies some villagers gave you."
+        },
+        "bunch of carrots": {
+          "description": "Carrots you stole from the Village's farm."
+        }
+      }
+    },
+    "Help": "I think we'll need some food before we go there.",
+    "Look": "The village is rather small. It looks like they grow different types of crops on the farm.\nSome villagers are walking around minding their own business.\nYou see some other villagers having a random conversation."
+  },
+  "Forest": {
+    "key": "Forest",
+    "description": "You have walked far into the large old Forest.\nThere is a heavy smell of pine, fir trees and rotten leaves.\nThe path from to the Village leading further trough the Forest gets more narrow.\nThe way forward is dark and steeped in a dark, eerie silence.",
+    "ConnectingRooms": {
+      "north": "Village",
+      "east": "Lake"
+    },
+    "items": {
+      "ring of mushrooms": {
+        "description": "There are some pretty-coloured mushrooms in a perfect circle.",
+        "kickable": {
+          "status": "so pretty",
+          "contains": "glowing mushrooms",
+          "description": "It's a glow-in-the-dark type of mushroom.\nHow lucky!"
+        }
+      },
+      "hollow tree trunk": {
+        "description": "It's a hollow trunk. Some small mushrooms are growing on top of it."
+      },
+      "pine tree": {
+        "description": "It's a pine tree.",
+        "contains": "some pine cones"
+      },
+      "fir trees": {
+        "description": "It's some very large fir trees.",
+        "contains": "some large pine cones"
+      }
+    },
+    "clue": "The Forest seems really dark, we shouldn't go further unless we have something to light the way.\nThat's a really pretty ring of mushrooms!",
+    "RoomCriteria": [
+      "a bag of cookies"
+    ],
+    "RoomInventory": {
+      "items": {
+        "glowing mushrooms": {
+          "description": "It's a glow-in-the-dark type of mushroom!\nYou think."
+        }
+      }
+    },
+    "Help": "We should find something to light the way first.",
+    "Look": "In front if your there is a ring of mushrooms, to your left a large hollow tree trunk.\nThere are a lot of very tall pine and fir trees streaching toward the sky,\nblocking almost all sunshine."
+  },
+  "Lake": {
+    "key": "Lake",
+    "description": "You walk into a clearing.\nIn the clearing there is a large woodland lake surrounded by the Forest.",
+    "ConnectingRooms": {
+      "west": "Forest",
+      "north": "Mountains",
+      "south": "Village"
+    },
+    "items": {
+      "very round hole": {
+        "description": "It's a round hole."
+      },
+      "small stones": {
+        "kickable": "",
+        "description": "There are some small stones lying on the ground.",
+        "contains": "some stones"
+      }
+    },
+    "clue": "Try to thow a rock into the hole!",
+    "RoomCriteria": [
+      "glowing mushrooms"
+    ],
+    "RoomInventory": {
+      "items": {
+        "small stones": {
+          "description": "Some small stones you found by the lake."
+        }
+      }
+    },
+    "Help": "It's dangerous to go alone, we should find something to defend ourselves with.",
+    "Look": "By the lake's edge there is a pile of small stones.\nA tall rock formation with a very round hole sits on a small island in the water.\nThe water looks very deep."
+  },
+  "Mountains": {
+    "key": "Mountains",
+    "description": "Huge mountains tower in front of you.\nYou find a mountain pass that leads forward.",
+    "ConnectingRooms": {
+      "east": "Forest",
+      "north": "Dungeon",
+      "south": "Lake"
+    },
+    "items": {
+      "huge rock": {
+        "description": "It's HUGE!"
+      }
+    },
+    "clue": "There is a huge rock over there that looks like it's blocking the way forward.",
+    "RoomCriteria": [
+      "sword"
+    ],
+    "RoomInventory": {
+      "items": {
+        "riddle pass": {
+          "description": "It's proof you solved the troll's riddle."
+        }
+      }
+    },
+    "Help": "There is a huge rock blocking the road.",
+    "Look": "As you walk further through the Mountains you see several wierdly shaped rock formations around you.\nOn your right side as you pass the rocks there is an old weathered sign saying 'BEWARE OF THE TROLLS'.\nIn front of you there is a huge rock that seems to be blocking your way forward."
+  },
+  "Dungeon": {
+    "key": "Dungeon",
+    "description": "A massive fallen tower in a foggy grove marks the entrance to the Dungeon.\nBeyond the fallen tree lies a grand, dusty room.\nThe faint glow from outside allows you to see remnants of statues, decayed and desolated by time.",
+    "ConnectingRooms": {
+      "south": "Mountains",
+      "north": "Castle",
+      "east": "Forest"
+    },
+    "items": {
+      "fallen tower": {
+        "description": "It's covered with moss. It seems to have been here a long time."
+      },
+      "key": {
+        "description": "It's a rusty key."
+      },
+      "labyrinth": {
+        "description": "It looks very dark."
+      },
+      "skeleton": {
+        "description": "The skeleton has a small pocket watch in it's hand.\nThe clock's hands are set to '13 hours'."
+      }
+    },
+    "clue": "You should look for a way through the labyrinth! Don't get lost.",
+    "RoomCriteria": [
+      "riddle pass"
+    ],
+    "RoomInventory": {
+      "items": {
+        "map": {
+          "description": "It shows you the way in which to solve the labyrinth."
+        },
+        "key": {
+          "description": "It's a rusty key."
+        }
+      }
+    },
+    "Help": "You pass various different rooms and countless passages\nbut somehow you end up back at the entrance.",
+    "Look": "While inside you notice the floors are covered in broken stone,\ndirt and puddles of water. There is a skeleton lying on the ground with it's hand clutching something."
+  },
+  "Castle": {
+    "key": "Castle",
+    "description": "You continue onwards, deeper into the dungeon's darkness.\nYou eventually make it to what is likely the final room.\nYou step inside a castle.",
+    "ConnectingRooms": {
+      "south": "Dungeon"
+    },
+    "items": {
+      "treasure!": {
+        "description": "So shiny!",
+        "contains": "100000000000000000 gold coins"
+      }
+    },
+    "clue": "Go get the treasure!",
+    "RoomCriteria": [
+      "map"
+    ],
+    "Help": "",
+    "Look": "There is a huge pile of treasure right in front of you!"
+  },
+  "Inventory": {
+    "items": {}
+  }
+}
