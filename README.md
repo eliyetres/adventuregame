@@ -9,7 +9,14 @@ Open the file directory in the command-line interpreter (cmd for Windows, Termin
 Start the program by typing 
 ./adventure.py --start
 
-
+Other arguments that can be passed to file:
+-------
+-h, --help          Description of the program and parameters that work.
+-i, --info          Description of the game and the game idea.
+-v, --version       Game version.
+-a, --about         Short about the game's author.
+-c, --cheat         How to cheat and beat the game in the shortest way possible.
+-s, --start         Start the game!
 
        _       _                 _                      ___                     
       /_\   __| |_   _____ _ __ | |_ _   _ _ __ ___    / _ \__ _ _ __ ___   ___ 
