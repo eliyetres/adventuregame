@@ -12,10 +12,15 @@ Start the program by typing
 Other arguments that can be passed to file:
 -------
 -h, --help          Description of the program and parameters that work.
+
 -i, --info          Description of the game and the game idea.
+
 -v, --version       Game version.
+
 -a, --about         Short about the game's author.
+
 -c, --cheat         How to cheat and beat the game in the shortest way possible.
+
 -s, --start         Start the game!
 
        _       _                 _                      ___                     
